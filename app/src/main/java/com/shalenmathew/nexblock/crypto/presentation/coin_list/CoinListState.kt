@@ -5,7 +5,7 @@ import com.shalenmathew.nexblock.crypto.presentation.model.CoinUi
 
 
 data class CoinListState(
-var isLoading: Boolean = false,
+    var isLoading: Boolean = false,
     var listOfCoins: List<CoinUi> = emptyList(),
     var selectedCoin: CoinUi? = null
 )

@@ -4,6 +4,10 @@ import androidx.compose.ui.graphics.Color
 
 val greenBackground = Color(0xFF119B00)
 val yellowBackground= Color(0xFFFFDE59)
+val DarkGreen = Color(0xFF00BF63)
+val LightGreen = Color(0xFFF0FDE0)
+val LightRed = Color(0xFFFDE0E0)
+val blackBackground = Color(0xFF1C1C1C)
 
 val primaryLight = Color(0xFF6F5D0E)
 val onPrimaryLight = Color(0xFFFFFFFF)

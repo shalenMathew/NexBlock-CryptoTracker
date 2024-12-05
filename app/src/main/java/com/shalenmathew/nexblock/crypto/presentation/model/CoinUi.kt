@@ -5,6 +5,7 @@ import androidx.annotation.DrawableRes
 import com.shalenmathew.nexblock.core.presentation.getDrawableIdForCoin
 
 import com.shalenmathew.nexblock.crypto.domain.model.Coin
+import com.shalenmathew.nexblock.crypto.presentation.coin_detail.DataPoint
 import java.util.Locale
 
 data class CoinUi(
@@ -12,15 +13,16 @@ data class CoinUi(
     val rank: Int,
     val name: String,
     val symbol: String,
-    val marketCapUsd: DisplayedNumbers,
-    val priceUsd: DisplayedNumbers,
-    val changePercent24Hr: DisplayedNumbers,
-    @DrawableRes val iconRes: Int
+    val marketCapUsd: DisplayableNumber,
+    val priceUsd: DisplayableNumber,
+    val changePercent24Hr: DisplayableNumber,
+    @DrawableRes val iconRes: Int,
+    val coinPriceHistory: List<DataPoint> = emptyList()
 )
 
-data class DisplayedNumbers(
+data class DisplayableNumber(
     val value: Double,
-    val displayValue: String
+    val formatted: String
 )
 
 fun Coin.toCoinUi(): CoinUi {
@@ -40,14 +42,14 @@ fun Coin.toCoinUi(): CoinUi {
 
 
 
-fun Double.toDisplayableNumber(): DisplayedNumbers{
+fun Double.toDisplayableNumber(): DisplayableNumber{
     val formatter = NumberFormat.getNumberInstance(Locale.getDefault()).apply {
         minimumFractionDigits = 2
         maximumFractionDigits = 2
     }
-    return DisplayedNumbers(
+    return DisplayableNumber(
         value = this,
-        displayValue = formatter.format(this)
+        formatted = formatter.format(this)
     )
 }
 

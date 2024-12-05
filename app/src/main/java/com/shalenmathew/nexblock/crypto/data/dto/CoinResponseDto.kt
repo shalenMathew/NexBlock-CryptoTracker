@@ -3,6 +3,8 @@ package com.shalenmathew.nexblock.crypto.data.dto
 import kotlinx.serialization.Serializable
 
 
+// this dto data class is is only should be used for data layer ...
+// then we will map this into model class in domain layer
 @Serializable
 data class CoinResponseDto(
     val data: List<CoinDto>
