@@ -299,6 +299,7 @@ fun LineChart(
                 }
             }
         }
+
         drawPath(
             path = linePath,
             color = style.chartLineColor,
