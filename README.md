@@ -13,4 +13,28 @@ Who are trying to find simpler projects to begin their contribution journey
 
 [![Static Badge](https://img.shields.io/badge/NexBlock-APK-red?logo=android)](https://github.com/shalenMathew/NexBlock-CryptoTracker/releases/tag/v1.0)
 
+## App demo
+https://github.com/user-attachments/assets/6c4b4116-6e4f-4fa8-94ef-a1ac12289f2c
+
+## Built With 🛠
+- Kotlin
+- Flow
+- Coroutines
+- MVI - Clean Architecture
+- Koin
+- Ktor
+- Canvas
+
+- 
+ ## Features ⚙️
+ 
+ - Discover list of coins
+- With their live prices
+- Details about the coin
+- Navigate to official site of the coin
+- Download the white paper
+- Know the team members working on the coin
+
+
+
 
