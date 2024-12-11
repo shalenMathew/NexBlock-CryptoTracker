@@ -29,7 +29,7 @@ https://github.com/user-attachments/assets/6c4b4116-6e4f-4fa8-94ef-a1ac12289f2c
 - Discover list of coins
 - With their live prices
 - Details about the coin
-- Get intercative price charts
+- Get interactive price charts
 
 ## Contribution 🤝
 - If your new to open source and want to play around with contribution you can do it here or u can raise issue if you want to make any improvements or fix any bugs
